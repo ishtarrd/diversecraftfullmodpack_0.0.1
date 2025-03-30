@@ -39,6 +39,64 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.STEEL.get())
                 .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STEEL_SWORD.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', ModItems.STEEL.get())
+                .define('B',Items.STICK.asItem())
+                .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STEEL_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.STEEL.get())
+                .define('B',Items.STICK.asItem())
+                .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STEEL_AXE.get())
+                .pattern(" AA")
+                .pattern(" BA")
+                .pattern(" B ")
+                .define('A', ModItems.STEEL.get())
+                .define('B',Items.STICK.asItem())
+                .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STEEL_AXE.get())
+                .pattern("AA ")
+                .pattern("AB ")
+                .pattern(" B ")
+                .define('A', ModItems.STEEL.get())
+                .define('B',Items.STICK.asItem())
+                .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get()))
+                .save(pRecipeOutput,ModPack.MOD_ID+"mirrored_axe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STEEL_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.STEEL.get())
+                .define('B',Items.STICK.asItem())
+                .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STEEL_HOE.get())
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.STEEL.get())
+                .define('B',Items.STICK.asItem())
+                .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STEEL_HOE.get())
+                .pattern("AA ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.STEEL.get())
+                .define('B',Items.STICK.asItem())
+                .unlockedBy(getHasName(ModItems.STEEL.get()), has(ModItems.STEEL.get()))
+                .save(pRecipeOutput,ModPack.MOD_ID+"mirrored_hoe");
+
         //Shapeless Recipe
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STEEL.get(), 9)
