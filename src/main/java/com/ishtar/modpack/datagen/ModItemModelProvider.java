@@ -10,6 +10,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -40,13 +41,21 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        //Dodaj iteme sa ovom linijom
+        //ITEMS
         basicItem(ModItems.STEEL.get());
 
+        //ARMOR
         trimmedArmorItem(ModItems.STEEL_BOOTS);
         trimmedArmorItem(ModItems.STEEL_HELMET);
         trimmedArmorItem(ModItems.STEEL_LEGGINGS);
         trimmedArmorItem(ModItems.STEEL_CHESTPLATE);
+
+        //TOOLS
+        handheldItem(ModItems.STEEL_AXE);
+        handheldItem(ModItems.STEEL_HOE);
+        handheldItem(ModItems.STEEL_PICKAXE);
+        handheldItem(ModItems.STEEL_SHOVEL);
+        handheldItem(ModItems.STEEL_SWORD);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
@@ -92,5 +101,13 @@ public class ModItemModelProvider extends ItemModelProvider {
                                         "item/" + itemRegistryObject.getId().getPath()));
             });
         }
+    }
+
+
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(ModPack.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

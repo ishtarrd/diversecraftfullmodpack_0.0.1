@@ -8,6 +8,12 @@
   "item.fullmodpack.steel_leggings": "Steel Leggings",
   "item.fullmodpack.steel_boots": "Steel Boots",
 
+  "item.fullmodpack.steel_sword": "Steel Sword",
+  "item.fullmodpack.steel_hoe": "Steel Hoe",
+  "item.fullmodpack.steel_shovel": "Steel Shovel",
+  "item.fullmodpack.steel_pickaxe": "Steel Pickaxe",
+  "item.fullmodpack.steel_axe": "Steel Axe",
+
   "creativetab.fullmodpack.steel_items": "Steel Items",
   "creativetab.fullmodpack.steel_blocks": "Steel Blocks"
 }

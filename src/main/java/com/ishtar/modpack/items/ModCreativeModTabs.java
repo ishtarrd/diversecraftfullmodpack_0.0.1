@@ -19,7 +19,7 @@ public class ModCreativeModTabs {
             ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.STEEL.get()))
                     .title(Component.translatable("creativetab.fullmodpack.steel_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        //Rude
+                        //Ores
                         output.accept(ModItems.STEEL.get());
 
                         //Armor
@@ -27,6 +27,13 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.STEEL_LEGGINGS.get());
                         output.accept(ModItems.STEEL_CHESTPLATE.get());
                         output.accept(ModItems.STEEL_HELMET.get());
+
+                        //Tools
+                        output.accept(ModItems.STEEL_SWORD.get());
+                        output.accept(ModItems.STEEL_PICKAXE.get());
+                        output.accept(ModItems.STEEL_HOE.get());
+                        output.accept(ModItems.STEEL_AXE.get());
+                        output.accept(ModItems.STEEL_SHOVEL.get());
 
                     })
                     .build());
