@@ -1,0 +1,13 @@
+{
+  "item.fullmodpack.steel": "Steel Ingot",
+
+  "block.fullmodpack.steel_block": "Block of Steel",
+
+  "item.fullmodpack.steel_helmet": "Steel Helmet",
+  "item.fullmodpack.steel_chestplate": "Steel Chestplate",
+  "item.fullmodpack.steel_leggings": "Steel Leggings",
+  "item.fullmodpack.steel_boots": "Steel Boots",
+
+  "creativetab.fullmodpack.steel_items": "Steel Items",
+  "creativetab.fullmodpack.steel_blocks": "Steel Blocks"
+}
