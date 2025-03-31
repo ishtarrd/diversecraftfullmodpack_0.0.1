@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fullmodpack:op_dungeon",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 150,
+    "separation": 149,
+    "salt": 1642136475
+  }
+}

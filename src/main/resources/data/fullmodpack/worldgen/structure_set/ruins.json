@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "fullmodpack:ruins",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spacing": 30,
+      "separation": 5,
+      "salt": 1642136474
+    }
+  }

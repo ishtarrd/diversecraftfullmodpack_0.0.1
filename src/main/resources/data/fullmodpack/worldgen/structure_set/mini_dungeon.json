@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fullmodpack:mini_dungeon",
+      "weight": 2
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 60,
+    "separation": 45,
+    "salt": 1642136475
+  }
+}
