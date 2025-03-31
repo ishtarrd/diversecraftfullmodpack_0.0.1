@@ -15,7 +15,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+        //DODAJ BLOKOVE
         blockWithItem(ModBlocks.STEEL_BLOCK);
+        blockWithItem(ModBlocks.ESMERALD_ORE);
 
     }
 

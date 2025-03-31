@@ -1,7 +1,9 @@
 {
   "item.fullmodpack.steel": "Steel Ingot",
+  "item.fullmodpack.esmerald": "Esmerald",
 
   "block.fullmodpack.steel_block": "Block of Steel",
+  "block.fullmodpack.esmerald_ore": "Esmerald Ore",
 
   "item.fullmodpack.steel_helmet": "Steel Helmet",
   "item.fullmodpack.steel_chestplate": "Steel Chestplate",

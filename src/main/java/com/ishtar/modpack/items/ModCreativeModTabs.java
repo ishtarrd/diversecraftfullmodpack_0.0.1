@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //Ores
                         output.accept(ModItems.STEEL.get());
+                        output.accept(ModItems.ESMERALD.get());
 
                         //Armor
                         output.accept(ModItems.STEEL_BOOTS.get());
@@ -43,7 +44,9 @@ public class ModCreativeModTabs {
                     .withTabsBefore(STEEL_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.fullmodpack.steel_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+
                         output.accept(ModBlocks.STEEL_BLOCK.get());
+                        output.accept(ModBlocks.ESMERALD_ORE.get());
 
                     })
                     .build());

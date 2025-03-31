@@ -43,6 +43,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         //ITEMS
         basicItem(ModItems.STEEL.get());
+        basicItem(ModItems.ESMERALD.get());
 
         //ARMOR
         trimmedArmorItem(ModItems.STEEL_BOOTS);

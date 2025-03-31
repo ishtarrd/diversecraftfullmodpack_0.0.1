@@ -26,7 +26,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(ModItems.STEEL.get());
+                .add(ModItems.STEEL.get())
+                .add(ModItems.ESMERALD.get());
 
         tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.STEEL_BOOTS.get())

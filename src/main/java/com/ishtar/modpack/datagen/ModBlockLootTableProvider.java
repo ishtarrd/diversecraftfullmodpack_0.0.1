@@ -33,16 +33,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.STEEL_BLOCK.get());
 
-
-
         //Blokovi koji dropaju druge stvari
 
-    /*    this.add(ModBlocks.ALEXANDRITE_ORE.get(),
-                block -> createOreDrop(ModBlocks.ALEXANDRITE_ORE.get(), ModItems.RAW_ALEXANDRITE.get()));
-        this.add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get(), ModItems.RAW_ALEXANDRITE.get(), 2, 6));
-        */
-
+        this.add(ModBlocks.ESMERALD_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.ESMERALD_ORE.get(), ModItems.ESMERALD.get(), 1, 1));
 
     }
 

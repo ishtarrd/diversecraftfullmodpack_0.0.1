@@ -16,6 +16,9 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL = ITEMS.register( "steel",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ESMERALD = ITEMS.register( "esmerald",
+            () -> new Item(new Item.Properties()));
+
     //ARMOR
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
             ()-> new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL,ArmorItem.Type.HELMET,
